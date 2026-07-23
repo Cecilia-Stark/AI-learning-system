@@ -16,16 +16,6 @@
 
 ---
 
-## 🖼️ 页面预览
-
-> （你可以放截图或动图在这里）
-
-| 登录页 | 主页 | 拖拽平台 |
-|:--:|:--:|:--:|
-| ![Login](docs/preview_login.png) | ![Home](docs/preview_home.png) | ![Drag](docs/preview_drag.png) |
-
----
-
 ## ⚙️ 项目结构
 src/
 ├── App.js
