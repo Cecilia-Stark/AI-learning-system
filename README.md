@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# 🌿 学 · 练 · 搭 一体化 AI 学习平台
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **一个让你「学算法、练模型、自由搭建网络」的可视化 AI 学习平台**  
+> 结合了学习、实验与实践三大功能模块，致力于让人工智能学习更直观、更有趣！
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ 功能特性
 
-### `npm start`
+- 🧠 **算法学习**：简洁介绍机器学习与深度学习核心算法  
+- 🎥 **学习视频**：Bilibili 嵌入播放，随时观看精选教学内容  
+- 🧩 **拖拽平台**：使用 ReactFlow 可视化搭建深度学习网络  
+- ⚙️ **AI 工具链**：模型训练、可视化、部署集于一体  
+- 🏹 **小练习**：快速算法挑战，强化理解与应用  
+- 🤖 **AI 助手**：带科技感的卡通人物，陪你学习与激励  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🖼️ 页面预览
 
-### `npm test`
+> （你可以放截图或动图在这里）
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| 登录页 | 主页 | 拖拽平台 |
+|:--:|:--:|:--:|
+| ![Login](docs/preview_login.png) | ![Home](docs/preview_home.png) | ![Drag](docs/preview_drag.png) |
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚙️ 项目结构
+src/
+├── App.js
+├── index.js
+├── index.css
+├── Components/
+│ ├── LoginSignup/
+│ │ ├── LoginSignup.jsx
+│ │ └── LoginSignup.css
+│ ├── HomePage/
+│ │ ├── HomePage.jsx
+│ │ └── HomePage.css
+│ ├── DragAndDrop/
+│ │ ├── DragAndDrop.jsx
+│ │ └── DragAndDrop.css
+│ ├── AITools/
+│ │ └── AITools.jsx
+│ └── Practice/
+│ └── Practice.jsx
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📦 依赖安装
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+确保你安装了 **Node.js ≥ 18** 与 **npm ≥ 9**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+然后在项目根目录运行：
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install react react-dom react-router-dom reactflow framer-motion lucide-react axios
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm install three @react-three/fiber @react-three/drei
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🚀 启动项目
+npm start
+访问：
 
-## Learn More
+http://localhost:3000
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+构建生产版本：
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm run build
 
-### Code Splitting
+🧩 技术栈
+类别	使用技术
+前端框架	React 18
+动画库	Framer Motion
+图标库	Lucide React
+拖拽系统	ReactFlow
+样式	Tailwind CSS
+网络请求	Axios
+视频嵌入	Bilibili Iframe
+交互助手	自定义 AI 卡通人物（未来接入 DeepSeek API）
+🤖 后续规划
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ 接入 DeepSeek / OpenAI API 让 AI 助手智能化
 
-### Analyzing the Bundle Size
+ 增加用户个人资料与学习进度存储
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ 拖拽平台导出模型 JSON
 
-### Making a Progressive Web App
+ 集成在线代码沙盒（运行训练脚本）
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+💚 作者信息
 
-### Advanced Configuration
+Made with 💚 by Cecilia
+📧 Contact: [your-email@example.com
+]
+🕊️ GitHub: your-github-link
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🪄 License
 
-### Deployment
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🌱 “让学习 AI 像搭积木一样简单”
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

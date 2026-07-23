@@ -1,0 +1,130 @@
+.lab-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.lab-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.lab-desc {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.cell-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.25s;
+}
+
+.cell-card:hover {
+  box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.t-btn {
+  background: #f0f4ff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: 0.2s;
+}
+
+.t-btn:hover {
+  background: #dce6ff;
+}
+
+.del-btn {
+  background: #ffe4e4 !important;
+}
+
+.del-btn:hover {
+  background: #ffcccc !important;
+}
+
+.run-btn {
+  margin-left: auto;
+  background: linear-gradient(135deg, #4f7cff, #5fa8ff);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.run-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.code-area {
+  width: 100%;
+  min-height: 140px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.code-area:focus {
+  border-color: #4f7cff;
+  box-shadow: 0 0 0 3px #cfe0ff;
+}
+
+.output-box {
+  background: #111;
+  color: #0f0;
+  padding: 14px;
+  border-radius: 12px;
+  margin-top: 16px;
+  white-space: pre-wrap;
+  font-size: 14px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.add-bottom {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 16px;
+  background: #f0f4ff;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.25s;
+}
+
+.add-bottom:hover {
+  background: #dbe7ff;
+}

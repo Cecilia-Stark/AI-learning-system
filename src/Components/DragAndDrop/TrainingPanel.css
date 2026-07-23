@@ -1,0 +1,9 @@
+.node-animation div {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.node-animation div.active {
+  background-color: #49d1b7 !important;
+  color: white;
+  transform: scale(1.1);
+}

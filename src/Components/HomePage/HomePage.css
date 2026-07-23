@@ -1,0 +1,124 @@
+.homepage-container {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #b2f1dd, #9debd1, #c0f6e5, #a8f0d8);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+@keyframes gradientMove {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Hero */
+.homepage-hero {
+  padding: 60px 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #035c45;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #064c3c;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* 模块按钮 */
+.modules-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.module-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 220px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.module-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.module-card h3 {
+  color: #035c45;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.module-card p {
+  color: #333;
+  font-size: 1rem;
+}
+
+/* 视频部分 */
+.video-section {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 40px 20px;
+  border-radius: 25px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.video-section h3 {
+  color: #035c45;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.video-thumbnail iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+}
+
+/* 机器人 */
+.robot-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
+}
+
+.robot-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.robot-message {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 8px 12px;
+  margin-top: 6px;
+  color: #035c45;
+  font-weight: 500;
+  font-size: 0.9rem;
+  max-width: 180px;
+  text-align: center;
+}

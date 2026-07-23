@@ -1,0 +1,185 @@
+.login-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #a3f7b5, #7de2d1, #b8fff4, #8ae6cf);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 动态圆形背景 */
+.background .circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: float 8s ease-in-out infinite;
+}
+
+.background .circle.delay {
+  width: 300px;
+  height: 300px;
+  top: 40%;
+  left: 70%;
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 标题部分 */
+.title {
+  text-align: center;
+  color: #084c3f;
+  margin-bottom: 40px;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #276c58;
+}
+
+/* 玻璃卡片效果 */
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+}
+
+/* 表单样式 */
+.form-content input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.form-content input:focus {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 5px #50c29a;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #0da678;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #079e71;
+}
+
+/* 登录注册切换 */
+.toggle-text {
+  margin-top: 15px;
+  color: #084c3f;
+  font-size: 0.9rem;
+}
+
+.toggle-text span {
+  color: #0da678;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.toggle-text span:hover {
+  text-decoration: underline;
+}
+
+/* 按钮加载状态 */
+.submit-btn.loading {
+  background: #0da678;
+  cursor: wait;
+  position: relative;
+}
+
+.loader {
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-top: 3px solid white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 登录成功提示动画 */
+.success-box {
+  text-align: center;
+  color: #084c3f;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.checkmark {
+  font-size: 3rem;
+  animation: pop 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0); opacity: 0; }
+  70% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
